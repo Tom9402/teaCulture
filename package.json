@@ -1,25 +1,11 @@
 {
-  "name": "tea_culture",
+  "name": "teaCulture",
   "version": "1.0.0",
-  "description": "",
-  "main": "Tea.js",
+  "main": "entry.js",
+  "repository": "https://github.com/Tom9402/teaCulture.git",
+  "author": "杨子豪 <yang.zihao@live.cn>",
+  "license": "MIT",
   "dependencies": {
-    "bootstrap": "^3.3.7",
-    "gulp": "^3.9.1",
-    "jquery": "^3.2.1"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Tom9402/teaCulture.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Tom9402/teaCulture/issues"
-  },
-  "homepage": "https://github.com/Tom9402/teaCulture#readme"
+    "jquery": "3.2.1"
+  }
 }

@@ -1,0 +1,324 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+body{
+	width: 1080px;
+}
+.header{
+	height: 290px;
+	width: 1080px;
+	background: #f0dfb3 url(../images/header.jpg) no-repeat;
+	font-family: "KaiTi";
+}
+span{
+	font-size: 70px;
+}
+.nav{
+	list-style: none;
+	padding-left: 70px;
+	margin-top: 88px;
+	overflow: hidden;
+	background-color: #f0dfb3;
+}
+.nav ul{
+	list-style: none;
+	width: 120px;
+	position: absolute;
+	left: -1000px;
+	background-color: #f0dfb3;
+}
+.nav li:hover ul{
+	left: auto;
+    z-index: 999;
+}
+ul.nav li{
+	float: left;
+	margin-right: 55px;
+	font-size: 30px;
+}
+.nav ul li{
+	padding-left: 9px;
+	width: 120px;
+	font-size: 25px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	background: #bf9a0d;
+}
+.main{
+	width: 1080px;
+	background: #e7d8bb;
+    position: relative;
+}
+#index_title{
+	font-family: "KaiTi";
+	padding-top: 30px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+#slideshow{
+	width: 480px;
+	height: 360px;
+	position: relative;
+	overflow: hidden;
+}
+.left,.left_Tea{
+	float: left;
+	width: 150px;
+	height: 500px;
+}
+.left ul{
+	list-style: none; 
+	font-family: "KaiTi";
+	font-size: 25px;
+	margin-left: 35px;
+	margin-top: 12px;
+}
+.left_Tea ul{
+	list-style: none; 
+	font-family: "KaiTi";
+	font-size: 25px;
+	margin-left: 75px;
+	margin-top: 120px;
+}
+.left li,.left_Tea li{
+	margin-top: 50px;
+}
+.right{
+	padding-left: 210px;
+	padding-right: 90px;
+	padding-bottom: 50px;
+}
+h2{
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+#shennong{
+	height: 294px;
+	width: 250px;
+	display: block;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+#make{
+	width: 350px;
+	height: 235px;
+	display: block;
+	margin: 0 auto;
+}
+/*#spread21,#spread22,#spread,#export,
+#greentea,#greentea2,#redtea1,#redtea2,
+#qingcha1,#qingcha2,#whitetea1,#whitetea2,
+#yellowtea1,#darktea1,#qihong,#xihulongjing,
+#puer,#tieguanyin,#biluochun,#xinyangmaojian,
+#junshanyinzhen,#luanguapian,#huangshanmaofeng,
+#duyunmaojian,#wuyiyancha,#luyv,#Japanesechadao,
+#art,#doucha,#shiming,#minghui,#kusun,#yiye{
+	display: block;
+	margin: 0 auto;
+}*/
+img{
+	display: block;
+	margin: 0 auto;
+}
+#yellowtea1{
+	width: 170px;
+	height: 130px;
+}
+#yellowtea2{
+	display: block;
+	margin: 0 auto;
+	width: 400px;
+	height: 300px;
+}
+#darktea2{
+	display: block;
+	margin: 0 auto;
+	width: 512px;
+	height: 312px;	
+}
+#describe{
+	text-align: center;
+}
+#drink{
+	width: 336px;
+	height: 190px;
+	display: block;
+	margin: 0 auto;
+}
+.right ul{
+	list-style: none;
+	margin-top: 40px;
+	font-size: 25px;
+	padding-left: 320px;
+}
+.right li{
+	float: left;
+	padding-right: 20px;
+}
+.right a{
+	padding:10px;
+	border: 1px green solid;
+}
+.footer{
+	overflow: hidden;
+	width: 1080px;
+	height: 36px;
+	background: #dec37e;
+    text-align: center;
+}
+#wrap{
+	white-space: pre-wrap;
+}
+p{
+	text-indent: 2em;
+}
+.more{
+    position: absolute;
+    display: none;
+    left: 63px;
+    bottom: 60px;
+    width: 90px;
+    height: 40px;
+    background: #DEC37E;
+    border-radius: 10px;
+    font-family:KaiTi;
+}
+.more span{
+    position: absolute;
+    font-size: 20px;
+    top:10px;
+    left: 22px;
+    letter-spacing: 10px;
+}
+.more ul{
+    position: absolute;
+    list-style-type: none;
+    bottom: 40px;
+    left: 42px;
+    width: 90px;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom:5px;
+    background: #DEC37E;
+    font-size: 20px;
+    display: none;
+}
+.more ul li{
+    padding-bottom:15px;
+}
+
+.auto-slide{
+    display: none;
+}
+
+
+/*响应式设计，当窗口宽度小于等于768px时的效果*/
+@media (max-width: 768px) {
+    body{
+        width: 763px;
+    }
+    .header{
+        width: 100%;
+        height: 225px;
+        overflow: hidden;
+    }
+    .header span{
+        font-size: 47px;
+    }
+    .header .nav{
+        padding-left:40px;
+        height: 32px;
+    }
+    .header .nav li{
+        margin-right:24px;
+        font-size:24px;
+    }
+    .main{
+        width: 763px;
+    }
+    .right{
+        font-size: 20px;
+        padding-left:30px;
+        padding-right:30px;
+        padding-bottom:100px;
+        width: 600px;
+    }
+    .left{
+        display: none;
+    }
+    .more{
+        display: block;
+    }
+    .footer{
+        width: 763px;
+    }
+
+	/*CSS3轮播图*/
+	#slideshow{
+		display: none;
+	}
+    .auto-slide{
+        display: block;
+        width: 480px;
+        height: 360px;
+        position: relative;
+        overflow: hidden;
+    }
+    .auto-slide ul{
+        width:500%;
+        height: 100%;
+        margin-top:0;
+		margin-left: 0;
+		padding:0;
+        background: url("../images/index_pic.jpg");
+        animation:auto-slide 10s infinite;
+    }
+    /*动画*/
+    @keyframes auto-slide {
+        0%{
+            margin-left:0;
+        }
+		20%{
+            margin-left: -480px;
+        }
+        40%{
+            margin-left: -960px;
+        }
+        60%{
+            margin-left: -1440px;
+        }
+        80%{
+            margin-left: -1920px;
+        }
+    }
+    /*链接*/
+    .auto-slide ul li{
+        width: 480px;
+        height: 360px;
+    }
+    .auto-slide ul li a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        border:none;
+        padding: 0;
+        background: none;
+    }
+
+    /*调整图片大小*/
+    #art{
+        width: 500px;
+    }
+    #shiming{
+        width: 500px;
+    }
+    #qingcha2,#whitetea2,#Japanesechadao{
+        width: 70%;
+    }
+}
