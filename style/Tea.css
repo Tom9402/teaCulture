@@ -21,6 +21,8 @@ span{
 	overflow: hidden;
 	background-color: #f0dfb3;
 }
+
+/*顶部导航栏*/
 .nav ul{
 	list-style: none;
 	width: 120px;

@@ -3,8 +3,6 @@
  */
 $(function () {
     $(".more").click(function () {
-        $(this).children("ul").css("display","block");
-    }).blur(function () {
-        $(this).children("ul").css("display","none");
+        $(this).children("ul").slideToggle();
     });
 });
